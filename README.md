@@ -29,7 +29,7 @@ Või kasutades VS Codei/Android Studiot
 
 # Protsess
 ### Võttis natukene aega, kuid sai üles seatud, lihtsam osa oli:
-- flutteri sdk installimine
+- Flutteri sdk installimine
 - VS Codeiga integreerimiseks VS Codei flutter/dart pluginate installimine
 - Esmase rakenduse (malli) loomine.
 ### Raskem osa oli:
