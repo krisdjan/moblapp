@@ -27,7 +27,7 @@ flutter run
 
 Või kasutades VS Codei/Android Studiot
 
-#Protsess
+# Protsess
 Võttis natukene aega, kuid sai üles seatud, lihtsam osa oli:
 - flutteri sdk installimine
 - VS Codeiga integreerimiseks VS Codei flutter/dart pluginate installimine
