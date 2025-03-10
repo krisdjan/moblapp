@@ -1,5 +1,5 @@
 # Flutteri rakendus
-Veendu, et sul on installitud:
+Veendu, et sul on installitud/olemas:
 - Flutter SDK (ja lisatud süsteemi PATHi)
 - Android Studio või VS Code koos Flutteri ja Dart pluginatega
 - Androidi emulaator või füüsiline seade
