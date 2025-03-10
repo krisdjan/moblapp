@@ -28,9 +28,9 @@ flutter run
 Või kasutades VS Codei/Android Studiot
 
 # Protsess
-Võttis natukene aega, kuid sai üles seatud, lihtsam osa oli:
+### Võttis natukene aega, kuid sai üles seatud, lihtsam osa oli:
 - flutteri sdk installimine
 - VS Codeiga integreerimiseks VS Codei flutter/dart pluginate installimine
 - Esmase rakenduse (malli) loomine.
-Raskem osa oli:
+### Raskem osa oli:
 - Saada füüsilisse seadmesse build käima (olid mõned anomaaliad)
