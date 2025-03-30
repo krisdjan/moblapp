@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/pages/counter.dart';
 import 'package:myapp/pages/homepage.dart';
+import 'package:myapp/pages/jorgenpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       routes: {
         '/homepage':(context) => HomePage(),
-        '/counterpage':(context) => CounterPage()
+        '/counterpage':(context) => CounterPage(),
+        '/jorgenpage':(context) => JorgenPage()
       },
   );
   }
