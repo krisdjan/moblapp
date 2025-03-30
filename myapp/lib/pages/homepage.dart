@@ -13,16 +13,16 @@ class HomePage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/counterpage');
+                Navigator.pushNamed(context, '/kristjanpage');
               },
-              child: const Text("Counter"),
+              child: const Text("Kristjan"),
             ),
             const SizedBox(height: 16), // Adds spacing between buttons
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/jorgenpage'); // go to jorgen page
               },
-              child: const Text("Jorgen"),
+              child: const Text("Jörgen"),
             ),
           ],
         ),
