@@ -1,5 +1,5 @@
 # Flutteri rakendus
-Veendu, et sul on installitud:
+Veendu, et sul on installitud/olemas:
 - Flutter SDK (ja lisatud süsteemi PATHi)
 - Android Studio või VS Code koos Flutteri ja Dart pluginatega
 - Androidi emulaator või füüsiline seade
@@ -26,3 +26,11 @@ flutter run
 ```
 
 Või kasutades VS Codei/Android Studiot
+
+# Protsess
+### Võttis natukene aega, kuid sai üles seatud, lihtsam osa oli:
+- Flutteri sdk installimine
+- VS Codeiga integreerimiseks VS Codei flutter/dart pluginate installimine
+- Esmase rakenduse (malli) loomine.
+### Raskem osa oli:
+- Saada füüsilisse seadmesse build käima (olid mõned anomaaliad)
