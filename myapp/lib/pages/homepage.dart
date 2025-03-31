@@ -32,6 +32,12 @@ class HomePage extends StatelessWidget {
               child: const Text("Hannes"),
             ),
             const SizedBox(height: 16)
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/timepage');
+              },
+              child: const Text("Go to Time Page"),
+            ),
           ],
         ),
       ),

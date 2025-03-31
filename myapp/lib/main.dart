@@ -3,6 +3,7 @@ import 'package:myapp/pages/kristjanpage.dart';
 import 'package:myapp/pages/homepage.dart';
 import 'package:myapp/pages/jorgenpage.dart';
 import 'package:myapp/pages/hannespage.dart';
+import 'package:myapp/pages/timepage.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
         '/kristjanpage':(context) => KristjanPage(),
         '/jorgenpage':(context) => JorgenPage(),
         '/hannespage':(context) => HannesPage()
+        '/timepage': (context) => TimePage(), 
       },
-  );
+    );
   }
 }
