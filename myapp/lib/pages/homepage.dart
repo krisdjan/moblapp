@@ -6,15 +6,27 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Home Page"),),
+      appBar: AppBar(title: const Text("Home Page")),
       body: Center(
-        child: ElevatedButton(
-          child: const Text("Counter"),
-          onPressed: () => {
-            //go to counter page
-            Navigator.pushNamed(context, '/counterpage')
-          }),
-      )
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/counterpage');
+              },
+              child: const Text("Go to Counter Page"),
+            ),
+            const SizedBox(height: 20), 
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/timepage');
+              },
+              child: const Text("Go to Time Page"),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/counter.dart';
-import 'package:myapp/pages/homepage.dart';
+import 'pages/counter.dart'; 
+import 'pages/homepage.dart'; 
+import 'pages/timepage.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -13,12 +14,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.amber),
-      home: const HomePage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
+        useMaterial3: true,
+      ),
+      home: const HomePage(), 
       routes: {
-        '/homepage':(context) => HomePage(),
-        '/counterpage':(context) => CounterPage()
+        '/homepage': (context) => const HomePage(), 
+        '/counterpage': (context) => const CounterPage(), 
+        '/timepage': (context) => const TimePage(), 
       },
-  );
+    );
   }
 }
