@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
             ElevatedButton( // <- parandatud
               onPressed: () {
-                Navigator.pushNamed(context, '/timepage');
+                Navigator.pushNamed(context, '/eerikpage');
               },
               child: const Text("Eerik")
             ),

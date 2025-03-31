@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-class TimePage extends StatefulWidget {
-  const TimePage({super.key});
+class EerikPage extends StatefulWidget {
+  const EerikPage({super.key});
 
   @override
-  _TimePageState createState() => _TimePageState();
+  _EerikPageState createState() => _EerikPageState();
 }
 
-class _TimePageState extends State<TimePage> {
+class _EerikPageState extends State<EerikPage> {
   late String _time;
   late Timer _timer;
 
