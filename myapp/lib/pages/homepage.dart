@@ -24,12 +24,14 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("Jörgen"),
             ),
+            const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/hannespage');
               },
               child: const Text("Hannes"),
             ),
+            const SizedBox(height: 16)
           ],
         ),
       ),
