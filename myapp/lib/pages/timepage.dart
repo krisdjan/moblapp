@@ -38,10 +38,4 @@ class _TimePageState extends State<TimePage> {
       ),
     );
   }
-
-  @override
-  void dispose() {
-    _timer.cancel();
-    super.dispose();
-  }
 }
