@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'pages/counter.dart'; 
-import 'pages/homepage.dart'; 
-import 'pages/timepage.dart'; 
+import 'package:myapp/pages/kristjanpage.dart';
+import 'package:myapp/pages/homepage.dart';
+import 'package:myapp/pages/jorgenpage.dart';
+import 'package:myapp/pages/hannespage.dart';
+import 'package:myapp/pages/timepage.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +17,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
-        useMaterial3: true,
-      ),
-      home: const HomePage(), 
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        )
+        ),
+      home: const HomePage(),
       routes: {
-        '/homepage': (context) => const HomePage(), 
-        '/counterpage': (context) => const CounterPage(), 
-        '/timepage': (context) => const TimePage(), 
+        '/homepage':(context) => HomePage(),
+        '/kristjanpage':(context) => KristjanPage(),
+        '/jorgenpage':(context) => JorgenPage(),
+        '/hannespage':(context) => HannesPage()
+        '/timepage': (context) => TimePage(), 
       },
     );
   }

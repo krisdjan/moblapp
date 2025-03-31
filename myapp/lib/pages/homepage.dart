@@ -9,15 +9,29 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: const Text("Home Page")),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min, // Keeps the column compact
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/counterpage');
+                Navigator.pushNamed(context, '/kristjanpage');
               },
-              child: const Text("Go to Counter Page"),
+              child: const Text("Kristjan"),
             ),
-            const SizedBox(height: 20), 
+            const SizedBox(height: 16), // Adds spacing between buttons
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/jorgenpage'); // go to jorgen page
+              },
+              child: const Text("Jörgen"),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/hannespage');
+              },
+              child: const Text("Hannes"),
+            ),
+            const SizedBox(height: 16)
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/timepage');
