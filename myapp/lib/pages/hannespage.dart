@@ -6,7 +6,7 @@ class HannesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Hannese leheke"),),
+      appBar: AppBar(title: const Text("Hannese leht"),),
     );
   }
 }

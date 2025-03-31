@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/pages/kristjanpage.dart';
 import 'package:myapp/pages/homepage.dart';
 import 'package:myapp/pages/jorgenpage.dart';
+import 'package:myapp/pages/hannespage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/homepage':(context) => HomePage(),
         '/kristjanpage':(context) => KristjanPage(),
-        '/jorgenpage':(context) => JorgenPage()
+        '/jorgenpage':(context) => JorgenPage(),
+        '/hannespage':(context) => HannesPage()
       },
   );
   }
