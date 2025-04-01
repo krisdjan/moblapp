@@ -27,6 +27,11 @@ class _EerikPageState extends State<EerikPage> {
   }
 
   @override
+//Sulgeb timeri lehelt lahkudes
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+}
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Reaalajas Kell')),
