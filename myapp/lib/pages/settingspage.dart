@@ -42,7 +42,7 @@ class _SettingsPageState extends State<SettingsPage> {
       }
     }
 
-    setState(() {}); // uuenda UI pärast laadimist
+    setState(() {});
   }
 
   Future<void> _saveSettingsToFile() async {

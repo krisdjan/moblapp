@@ -10,6 +10,7 @@ class CameraSavePage extends StatefulWidget {
 
   @override
   State<CameraSavePage> createState() => _CameraSavePageState();
+  
 }
 
 class _CameraSavePageState extends State<CameraSavePage> {
@@ -38,10 +39,11 @@ class _CameraSavePageState extends State<CameraSavePage> {
     if (pickedFile != null) {
       final dir = await getApplicationDocumentsDirectory();
       final savedImage = await File(pickedFile.path).copy('${dir.path}/saved_image.jpg');
-
+      print('Saved image path: ${savedImage.path}');
       setState(() {
         _savedImage = savedImage;
       });
+      
 
       ScaffoldMessenger.of(context as BuildContext).showSnackBar(
         const SnackBar(content: Text("Pilt salvestatud rakenduse mällu")),
