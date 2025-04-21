@@ -43,7 +43,13 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, '/settingspage');
               },
               child: const Text("Settings")),
-              const SizedBox(height: 16)
+              const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/camerapage');
+              },
+              child: const Text("Ava kaameraleht"),
+            ),
           ],
         ),
       ),
