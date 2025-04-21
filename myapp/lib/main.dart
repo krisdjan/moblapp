@@ -5,6 +5,7 @@ import 'package:myapp/pages/jorgenpage.dart';
 import 'package:myapp/pages/hannespage.dart';
 import 'package:myapp/pages/eerikpage.dart';
 import 'package:myapp/pages/settingspage.dart';
+import 'package:myapp/pages/camerapage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,8 @@ class MyApp extends StatelessWidget {
         '/jorgenpage':(context) => JorgenPage(),
         '/hannespage':(context) => HannesPage(),
         '/eerikpage':(context) => EerikPage(),
-        '/settingspage':(context) => SettingsPage()
+        '/settingspage':(context) => SettingsPage(),
+        '/camerapage': (context) => CameraSavePage()
       },
     );
   }
