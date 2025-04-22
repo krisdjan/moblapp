@@ -34,6 +34,7 @@ class _SettingsPageState extends State<SettingsPage> {
     if (await file.exists()) {
       final lines = await file.readAsLines();
       for (var line in lines) {
+        line = line.trim();
         if (line.startsWith('user_name=')) {
           _nameController.text = line.split('=')[1];
         } else if (line.startsWith('dark_mode=')) {
@@ -47,12 +48,12 @@ class _SettingsPageState extends State<SettingsPage> {
 
   Future<void> _saveSettingsToFile() async {
     final file = await _getConfigFile();
-    final content = '''
-user_name=${_nameController.text}
-dark_mode=$_darkMode
-''';
+    final content = [
+      'user_name=${_nameController.text}',
+      'dark_mode=$_darkMode',
+    ].join('\n');
     await file.writeAsString(content.trim());
-    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Salvestatud config.txt failina")));
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Salvestatud")));
   }
 
   @override
@@ -74,7 +75,7 @@ dark_mode=$_darkMode
             ),
             ElevatedButton(
               onPressed: _saveSettingsToFile,
-              child: const Text("Salvesta config.txt"),
+              child: const Text("Salvesta"),
             ),
           ],
         ),
