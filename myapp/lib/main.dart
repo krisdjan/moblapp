@@ -4,6 +4,7 @@ import 'package:myapp/pages/homepage.dart';
 import 'package:myapp/pages/jorgenpage.dart';
 import 'package:myapp/pages/hannespage.dart';
 import 'package:myapp/pages/eerikpage.dart';
+import 'package:myapp/pages/networkpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,8 @@ class MyApp extends StatelessWidget {
         '/kristjanpage':(context) => KristjanPage(),
         '/jorgenpage':(context) => JorgenPage(),
         '/hannespage':(context) => HannesPage(),
-        '/eerikpage':(context) => EerikPage()
+        '/eerikpage':(context) => EerikPage(),
+        '/networkpage':(context) => NetworkPage(),
       },
     );
   }

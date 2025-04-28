@@ -38,6 +38,13 @@ class HomePage extends StatelessWidget {
               },
               child: const Text("Eerik")
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/networkpage');
+                },
+                child: const Text("Network")
+            ),
           ],
         ),
       ),
